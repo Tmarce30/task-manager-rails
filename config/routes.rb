@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   #create
   post 'tasks', to: 'tasks#create'
   #show
-  get 'tasks/:id', to: 'tasks#show'
+  get 'tasks/:id', to: 'tasks#show', as: :task
   #edit
   get 'tasks/:id/edit', to: 'tasks#edit'
   #update
